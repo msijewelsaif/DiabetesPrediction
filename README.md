@@ -1,10 +1,10 @@
-Diabetes Prediction Web Application
-Project Overview
+**Diabetes Prediction Web Application**
+_Project Overview_
 The Diabetes Prediction Web Application is an interactive tool designed to predict the likelihood of a person having diabetes based on certain health features. Using machine learning models, this web application takes user inputs such as Glucose, BMI, Insulin, and Age to provide a prediction. It helps individuals assess their risk for diabetes and encourages early detection and lifestyle changes.
 
 This project demonstrates how machine learning and web technologies can work together to create practical, real-world applications that can improve public health awareness.
 
-Features
+_Features_
 User Input Form: The application allows users to enter their details such as Glucose, BMI, Insulin, and Age.
 Prediction: Based on the entered data, the model predicts whether the individual is at risk for diabetes.
 User-Friendly Interface: A clean, responsive web interface built with HTML, CSS, and JavaScript.
@@ -19,7 +19,7 @@ Joblib: Used to serialize the trained machine learning model for later use.
 Installation
 To run this project locally, follow these steps:
 
-Prerequisites
+_Prerequisites_
 Make sure you have Python 3.x installed.
 Install the required libraries by running:
 pip install -r requirements.txt

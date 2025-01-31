@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <form action="/" method="POST" class="prediction-form">
+            <div class="input-group">
+                <label for="glucose">Glucose:</label>
+                <input type="text" id="glucose" name="glucose" placeholder="Enter glucose level">
+            </div>
+            
+            <div class="input-group">
+                <label for="bmi">BMI:</label>
+                <input type="text" id="bmi" name="bmi" placeholder="Enter BMI">
+            </div>
+            
+            <div class="input-group">
+                <label for="insulin">Insulin:</label>
+                <input type="text" id="insulin" name="insulin" placeholder="Enter insulin level">
+            </div>
+            
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age">
+            </div>
+
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+            <div class="result">
+                <h3>Prediction: <span>{{ prediction }}</span></h3>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
